@@ -10,6 +10,8 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
+import static java.lang.Thread.sleep;
+
 public class Main extends Application {
 
     private final Rectangle[] rectangle = new Rectangle[100];
@@ -60,8 +62,8 @@ public class Main extends Application {
             while (!isOver) {
                 movement();
                 try {
-                    Thread.sleep(200);
-                } catch (Exception ex) {
+                    sleep(200);
+                } catch (Exception _) {
                 }
             }
         });
