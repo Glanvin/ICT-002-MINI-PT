@@ -97,14 +97,14 @@ public class Main extends Application {
     }
 
     private void movement() {
-        int[][] tmp = {{x[1], y[1]}, {}};
+        int[][] tailPosition = {{x[1], y[1]}, {}};
         x[1] = x[0];
         y[1] = y[0];
         for (int i = 2; i < tailLength; i++) {
-            tmp[1] = new int[]{x[i], y[i]};
-            x[i] = tmp[0][0];
-            y[i] = tmp[0][1];
-            tmp[0] = tmp[1];
+            tailPosition[1] = new int[]{x[i], y[i]};
+            x[i] = tailPosition[0][0];
+            y[i] = tailPosition[0][1];
+            tailPosition[0] = tailPosition[1];
             if (grow > 0 && x[tailLength - 1] == foodLocation[0] && y[tailLength - 1] == foodLocation[1]) {
                 rectangle[tailLength - 1].setVisible(true);
                 --grow;
