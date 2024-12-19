@@ -35,8 +35,8 @@ public class Main extends Application {
     private int direction = 3; // Snake's movement direction (0 = Down, 1 = Left, 2 = Up, 3 = Right)
     private int[] foodLocation, headLocation; // Track the food and head locations
     private int grow = 0; // Number of segments to grow
-    private Text scoreText; // Added
-    private Text controlsText; // Added
+    private Text scoreText;
+    private Text controlsText;
 
     // Draws a rectangle with default styling
     private Rectangle initRect() {
