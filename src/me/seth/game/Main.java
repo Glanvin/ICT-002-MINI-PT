@@ -19,7 +19,7 @@ import static java.lang.Thread.sleep;
  * <p>
  * ICT 002 1ST MINI PERFORMANCE TASK
  * <p>
- * Created by Seth Matthew Valmores,
+ *
  */
 public class Main extends Application {
 
